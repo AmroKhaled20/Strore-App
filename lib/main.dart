@@ -1,4 +1,5 @@
 import 'package:ak_store_app/screens/home_screen.dart';
+import 'package:ak_store_app/screens/update_product_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -12,7 +13,8 @@ class StroreApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      routes: {HomeScreen.id: (context) => HomeScreen()},
+      routes: {HomeScreen.id: (context) => HomeScreen(),
+      UpdateProductScreen.id:(context) => UpdateProductScreen()},
       initialRoute: 'Home Screen',
     );
   }
